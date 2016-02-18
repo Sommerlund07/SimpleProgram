@@ -13,7 +13,7 @@ import business.Trade;
  * @author Stephane Joyeux
  * 
  */
-public class FormulaCalculator implements ICalculator {
+public class CalculatorService implements ICalculator {
 
 	// TODO : Manage exception in result of formula :
 

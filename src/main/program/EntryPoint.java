@@ -9,7 +9,7 @@ import tools.DateFormat;
 import business.Stock;
 import business.Trade;
 import data.DataFactory;
-import formula.FormulaCalculator;
+import formula.CalculatorService;
 import formula.ICalculator;
 
 /***
@@ -24,7 +24,7 @@ public class EntryPoint {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		ICalculator calculator = new FormulaCalculator();
+		ICalculator calculator = new CalculatorService();
 		Map<String, Stock> stocks = DataFactory.getData();
 		Iterator<?> it = stocks.entrySet().iterator();
 		List<Double> listOfPrices = new ArrayList<Double>();
